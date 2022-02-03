@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>play</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shiurim-video" transform="translate(-787.000000, -1403.000000)">
+            <g id="Group-Copy-8" transform="translate(610.785433, 1306.526608)">
+                <g id="play" transform="translate(177.000000, 97.562104)">
+                    <circle id="Oval" stroke="#FFFFFF" cx="28" cy="28" r="28"></circle>
+                    <path d="M32.9128862,21.4102378 L44.108094,32.5844604 C44.889875,33.3647759 44.891063,34.6311053 44.1107474,35.4128862 C43.7355674,35.7887709 43.226291,36 42.6952078,36 L20.3047922,36 C19.2002227,36 18.3047922,35.1045695 18.3047922,34 C18.3047922,33.4689168 18.5160213,32.9596404 18.891906,32.5844604 L30.0871138,21.4102378 C30.8678577,20.6309573 32.1321423,20.6309573 32.9128862,21.4102378 Z" id="Triangle" fill="#FFFFFF" transform="translate(31.500000, 28.000000) rotate(-270.000000) translate(-31.500000, -28.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
