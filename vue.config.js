@@ -13,7 +13,6 @@ module.exports = {
 				'/levaya',
 				'/shiurim-video',
 				'/shiurimarticles',
-				'/tribute/:id',
 			],
 			useRenderEvent: true,
 			onlyProduction: true,
