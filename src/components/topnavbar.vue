@@ -54,9 +54,18 @@ export default {
     };
   },
   async beforeMount() {
+    const now = new Date(Date.now());
+    const year = now.getFullYear();
+    let month = String(now.getMonth());
+    let day = String(now.getDate() + 10);
+
+    month = month.length === 1 ? "0" + month : month;
+    day = day.length === 1 ? "0" + day : day;
+    const q = `${year}-${month}-${day}`;
+
     let { data: events } = await this.$db
       .collection("events")
-      .query("date", ">", new Date())
+      .query("date", ">", q)
       .get();
     this.events = events;
   },
