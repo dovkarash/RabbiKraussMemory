@@ -17,6 +17,7 @@
           class="art-box"
         >
           <img
+            v-if="article.image.imageURL"
             :src="article.image.imageURL"
             height=""
             width=""
@@ -26,7 +27,7 @@
             <p class="box-head row3">
               {{ article.title }}
             </p>
-            <p class="date">
+            <p v-if="article.date" class="date">
               {{ new Date(article.date).toLocaleDateString() }}
             </p>
             <p class="box-txt row3">

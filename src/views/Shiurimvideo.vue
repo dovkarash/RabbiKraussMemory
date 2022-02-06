@@ -32,7 +32,9 @@
           <p class="box-head row3">
             {{ video.title }}
           </p>
-          <p class="date">{{ new Date(video.date).toLocaleDateString() }}</p>
+          <p v-if="video.date" class="date">
+            {{ new Date(video.date).toLocaleDateString() }}
+          </p>
         </a>
       </div>
     </div>
@@ -57,8 +59,7 @@ export default {
       // 	standard: 'sddefault',
       // 	maxres: 'maxresdefault'
       // }
-      const url =
-        "https://i.ytimg.com/vi/" + id + "/" + "maxresdefault" + ".jpg";
+      const url = "https://i.ytimg.com/vi/" + id + "/" + "hqdefault" + ".jpg";
       console.log(url);
       return url;
     },

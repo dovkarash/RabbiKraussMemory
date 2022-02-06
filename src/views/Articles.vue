@@ -17,7 +17,9 @@
           <p class="box-head row3">
             {{ article.title }}
           </p>
-          {{ new Date(article.date).toLocaleDateString() }}
+          <p v-if="article.date" class="date">
+            {{ new Date(article.date).toLocaleDateString() }}
+          </p>
         </a>
       </div>
     </div>
