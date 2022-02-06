@@ -935,6 +935,7 @@ input[type="reset"] {
   height: 100%;
   object-fit: cover;
   flex-basis: 38%;
+  width: 38%;
 }
 
 .art-box:hover {
@@ -1198,6 +1199,10 @@ input[type="reset"] {
 }
 
 @media screen and (max-width: 479px) {
+  .art-box {
+    display: block;
+  }
+
   .btn.form {
     width: 100%;
   }
