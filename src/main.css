@@ -328,7 +328,6 @@ fieldset {
   cursor: pointer;
 }
 
-
 .nav-link:hover {
   border-bottom: 4px solid #09A2E7;
   color: #09A2E7;
@@ -492,7 +491,6 @@ input[type="reset"] {
 .box-txt a {
   color: white;
 }
-
 
 .timeline-sec {
   margin: 50px 0;
@@ -954,7 +952,6 @@ input[type="reset"] {
   padding: 50px 0;
 }
 
-
 .trib-box {
   border-radius: 5px;
   background: White;
@@ -992,7 +989,7 @@ input[type="reset"] {
     top: 0;
     right: 0;
     padding: 20px;
-    width: 200px;
+    width: 250px;
     transition: 200ms all ease;
     transform: translateX(210px);
   }
