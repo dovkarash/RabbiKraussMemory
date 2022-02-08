@@ -3,9 +3,9 @@
   <div>
     <div class="w1200">
       <div class="top-line"></div>
-      <h1 class="small-center-head">Articles by</h1>
+      <h1 class="small-center-head">Articles about</h1>
 
-      <h1 class="center-head">Rabbi Simcha Krauss z”l</h1>
+      <h1 class="center-head">Rabbi Krauss z”l</h1>
       <div class="group-wrap">
         <a
           :href="article.link"
