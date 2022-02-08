@@ -4,66 +4,78 @@
     <div class="w1200">
       <h3 class="head-sec">Post a Tribute</h3>
       <form
-        action="/"
-        class="post-form"
-        @submit.prevent="sendForm"
-        v-if="formStatus != 'success'"
+          action="/"
+          class="post-form"
+          @submit.prevent="sendForm"
+          v-if="formStatus != 'success'"
       >
         <div class="form-left">
           <input
-            placeholder="Name"
-            type="text"
-            id=""
-            name=""
-            class="dark-input"
-            v-model="form.name"
-          />
+              placeholder="Name"
+              type="text"
+              id=""
+              name=""
+              class="dark-input"
+              v-model="form.name"
+           />
           <input
-            placeholder="Email"
-            type="email"
-            id=""
-            name=""
-            class="dark-input"
-            v-model="form.email"
-          />
+              placeholder="Email"
+              type="email"
+              id=""
+              name=""
+              class="dark-input"
+              v-model="form.email"
+           />
           <input
-            placeholder="City"
-            type="text"
-            id=""
-            name=""
-            class="dark-input"
-            v-model="form.city"
-          />
+              placeholder="City"
+              type="text"
+              id=""
+              name=""
+              class="dark-input"
+              v-model="form.city"
+           />
           <div class="bgl-checkbox-wrap">
             <input
-              class="bgl-checkbox"
-              type="checkbox"
-              id="bglcheckbox"
-              name="bglcheckbox"
-              checked=""
-              v-model="form.agree"
-            />
-            <label class="bgl-checkbox-label" for="bglcheckbox"
-              >I agree to publish this on the site</label
-            >
+                class="bgl-checkbox"
+                type="checkbox"
+                id="bglcheckbox"
+                name="bglcheckbox"
+                checked=""
+                v-model="form.agree"
+             />
+            <label
+                class="bgl-checkbox-label"
+                for="bglcheckbox"
+            >I agree to publish this on the site</label>
           </div>
         </div>
 
         <div class="form-right">
           <textarea
-            placeholder="Entry"
-            id=""
-            name=""
-            class="dark-input big"
-            v-model="form.tribute"
+              placeholder="Entry Here"
+              id=""
+              name=""
+              class="dark-input big"
+              v-model="form.tribute"
           ></textarea>
-          <input type="submit" id="" value="Submit Tribute" class="btn form" />
+          <input
+              type="submit"
+              id=""
+              value="Submit Tribute"
+              class="btn form"
+           />
         </div>
       </form>
-      <div v-if="formStatus == 'fail'" class="form-fail">
+      <div
+          v-if="formStatus == 'fail'"
+          class="form-fail"
+      >
         <p>Something went wrong while submitting</p>
       </div>
-      <div v-if="formStatus == 'success'" class="form-success">
+      <div
+          v-if="formStatus == 'success'"
+          class="form-success"
+      >
         <p>Thank you for the Tribute</p>
       </div>
 
@@ -72,9 +84,10 @@
           If you have a video, article or photo you think should be featured in
           any other section of this website, you may include it in your post,
           but please also submit it to
-          <a href="mailto:tharcsztark@gmail.com" target="_blank"
-            >tharcsztark@gmail.com.</a
-          >
+          <a
+              href="mailto:tharcsztark@gmail.com"
+              target="_blank"
+          >tharcsztark@gmail.com.</a>
         </p>
       </div>
     </div>
