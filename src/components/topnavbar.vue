@@ -45,7 +45,7 @@ export default {
           { linkName: "Personal Tributes", path: "/personal-tributes" },
           { linkName: "Obituaries in Publications", path: "/publications" },
           {
-            linkName: "Articles by Rabbi Simcha Krauss z”l",
+            linkName: "Articles about Rabbi Krauss",
             path: "/articles",
           },
         ],
