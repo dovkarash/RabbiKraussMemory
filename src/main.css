@@ -478,6 +478,10 @@ input[type="reset"] {
   font-family: 'Assistant', sans-serif;
 }
 
+.box-head.down {
+  margin-top: 30px;
+}
+
 .box-txt {
   display: block;
   display: -webkit-box;

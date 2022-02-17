@@ -23,11 +23,17 @@
               class="play-icon"
             />
             <img
-              :src="getYoutubeThumbnail(video.link)"
+              :src="video.thumbnail.imageURL"
               height=""
               width=""
               class="video-box-img"
             />
+            <!-- <img
+              :src="getYoutubeThumbnail(video.link)"
+              height=""
+              width=""
+              class="video-box-img"
+            /> -->
           </div>
           <p class="box-head row3">
             {{ video.title }}
@@ -67,7 +73,8 @@ export default {
   async beforeMount() {
     let { data: shiurimVideo } = await this.$db
       .collection("shiurimVideo")
-      .sort("date", "desc")
+      // .sort("date", "desc")
+      .sort("order", "asc")
       .get();
     this.shiurimVideo = shiurimVideo;
   },

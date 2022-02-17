@@ -10,7 +10,7 @@
       </div>
       <div class="group-wrap">
         <a
-          :href="article.link"
+          :href="article.link || article.pdf.imageURL"
           target="_blank"
           v-for="article in shiurimArticles"
           :key="article._id"
@@ -50,7 +50,8 @@ export default {
   async beforeMount() {
     let { data: shiurimArticles } = await this.$db
       .collection("shiurimArticles")
-      .sort("date", "desc")
+      // .sort("date", "desc")
+      .sort("order", "asc")
       .get();
     this.shiurimArticles = shiurimArticles;
   },

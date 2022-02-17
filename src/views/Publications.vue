@@ -3,8 +3,8 @@
   <div>
     <div class="w1200">
       <div class="top-line"></div>
-      <h1 class="small-center-head">Obituaries in</h1>
-      <h1 class="center-head">Publications</h1>
+      <!-- <h1 class="small-center-head">Obituaries in</h1> -->
+      <h1 class="center-head">Obituaries</h1>
       <div class="group-wrap">
         <a
           :href="article.link"
@@ -33,7 +33,9 @@ export default {
   async beforeMount() {
     let { data: publications } = await this.$db
       .collection("publications")
-      .sort("date", "desc")
+      // .sort("date", "desc")
+      .sort("order", "asc")
+
       .get();
     this.publications = publications;
   },
