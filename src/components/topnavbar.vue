@@ -34,11 +34,11 @@ export default {
       openSideBar: false,
       openDrop: false,
       dropDown: {
+        title: "Shiurim",
         links: [
-          { linkName: "Videos", path: "/shiurim-video" },
+          { linkName: "Audio/Video", path: "/shiurim-video" },
           { linkName: "Articles", path: "/shiurimarticles" },
         ],
-        title: "Shiurim",
       },
       dropDown1: {
         links: [
