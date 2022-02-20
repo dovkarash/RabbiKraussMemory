@@ -8,7 +8,7 @@
       <h1 class="center-head">Rabbi Krauss z”l</h1>
       <div class="group-wrap">
         <a
-          :href="article.link"
+          :href="article.link || article.pdf.imageURL"
           target="_blank"
           v-for="article in articlesByRabbiKrauss"
           :key="article._id"

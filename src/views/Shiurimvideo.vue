@@ -3,7 +3,7 @@
     <div class="w1200">
       <div class="center">
         <div class="big-head-wrap">
-          <h1 class="huge-head">Videos</h1>
+          <h1 class="huge-head">Audio / Video</h1>
           <div class="top-line down"></div>
         </div>
       </div>
