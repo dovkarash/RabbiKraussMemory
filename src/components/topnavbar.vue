@@ -10,6 +10,7 @@
         <img src="../assets/close-small.svg" />
       </div>
       <a href="/#gallery" class="nav-link active">Gallery</a>
+      <router-link to="/shloshim" class="nav-link">Shloshim</router-link>
 
       <dropdown :links="dropDown.links" :title="dropDown.title"></dropdown>
 

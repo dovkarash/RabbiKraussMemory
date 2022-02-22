@@ -1,4 +1,5 @@
 import tribute from '../views/tribute.vue'
+import shloshim from '../views/Shloshim.vue'
 import shiurimarticles from '../views/Shiurimarticles.vue'
 import shiurimvideo from '../views/Shiurimvideo.vue'
 import levaya from '../views/Levaya.vue'
@@ -16,6 +17,10 @@ const routes = [{
   path: '/',
   name: 'Home',
   component: Home
+}, {
+  path: '/Shloshim',
+  name: 'Shloshim',
+  component: shloshim
 }, {
   path: '/Post',
   name: 'Post',
